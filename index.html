@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+<style>
+    #div{
+        padding: 2cm;
+        border-color: black;
+   border-radius: 50;
+    background:radial-gradient(rgb(153, 229, 21),rgb(248, 247, 247));
+
+
+    }
+    .label{
+
+        font-size: larger;
+        font-style: italic;
+        color: rgba(0, 0, 0, 0.738);
+    }
+    .label
+    {font-size: 37px;
+  color: rgb(7, 8, 7);
+  padding: 0 5px;
+  line-height: 80px;
+  font-weight: bold;
+
+  
+  
+  font-family: Calibri; 
+  
+
+  font-weight: bold;
+  border-radius: 15px;
+  box-shadow: #070708 px 50PX 24PX;
+
+ 
+ 
+}
+
+</style>
+
+
+</head>
+<body>
+    <div id="div">
+    <center>
+        <FONT COLOR="black" SIZE="15PX"> ADMISSION FORM</FONT></H3>
+        <HR COLOR="black">
+        <br>
+    <table border='2' bordercolor="black" cellpadding="25" cellspacing="0">
+        <tr>
+    <form>
+        <td><label class="label" maxlength="30" value="name" >FirstName</label>
+        </td><td>
+        <Input id="fname" type="text"></Input>
+    </td>
+    </tr>
+    <tr><td>
+        <label class="label">LastName</label>
+    </td><td>
+        <Input id="lname" type="text"></Input>
+    </td>
+
+        </tr>
+        <tr>
+            <td>
+        <label class="label">Date of Birth</label>
+            </td><td>
+        <Input id="DOB" type="date"></Input>
+       
+    </td></tr>
+       <tr>
+        <td>
+        <label class="label">E-mail ID</label>
+        </td><td>
+        <Input id="email" input type="email" name="Email_Id" maxlength="100"></Input>
+    </td>
+    </tr>
+    <tr>
+        <td><label class="label">Message </label>
+        </td><td>
+           <textarea id="Address" rows="4" cols="30">Write Here</textarea>
+    
+    </td></tr>
+    
+        
+    
+
+    </form>
+</table>
+<br>
+<button id="submit"><center>Submit</center></button>
+</center>
+<HR COLOR="black">
+</div>
+
+<script>
+   let submit=document.getElementById("submit");
+
+    submit.addEventListener("click",function(){
+
+        let fname=document.getElementById("fname").value;
+    
+    let lname=document.getElementById("lname").value;
+    
+    let DOB=document.getElementById("DOB").value;
+    
+    let email=document.getElementById("email").value;
+    let message=document.getElementById("Address").value;
+
+    
+   alert(`Hello,${fname} ${lname}.You've submitted the form which concludes that your Email Id is${email} and
+        your Dob is ${DOB}.we've received your message,which is ${message} THANK YOU`);
+
+
+
+
+    });
+    
+console.log(fname);
+console.log(x);
+console.log(y);
+</script>
+
+
+
+</body>
+</html>
